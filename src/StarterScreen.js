@@ -1,10 +1,6 @@
-import { useEffect, useState } from "react";
-function StarterScreen({ questions, dispatch }) {
-  const [len, setLen] = useState(0);
 
-  useEffect(() => {
-    setLen(questions.length);
-  }, [questions]);
+function StarterScreen({ len , dispatch }) {
+
   return (
     <div className="start">
       <h2>Welcome To The React Quiz!</h2>
